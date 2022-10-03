@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SearchNav from "./components/SearchNav";
 import SearchBox from "./components/SearchBox";
 import WordTable from "./components/WordTable";
+import InfoTable from "./components/InfoTable";
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
@@ -19,6 +20,7 @@ function App() {
             </div>
             <SearchBox setSearchTerms={setSearchTerms} />
             <WordTable searchTerms={searchTerms} />
+            <InfoTable/>
         </div>
     );
 }
