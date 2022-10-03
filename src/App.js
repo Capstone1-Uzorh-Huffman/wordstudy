@@ -7,18 +7,20 @@ import WordTable from "./components/WordTable";
 import InfoTable from "./components/InfoTable";
 
 function App() {
-    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTerms, setSearchTerms] = useState("");
     return (
         <div className="App">
-            <span>
-                <div style={{ marginTop: "3rem" }}>
-                    <h1 style={{ fontSize: "3rem", fontWeight: "lighter" }}>Animacy & Normative Data</h1>
+            <div style={{ backgroundColor: "black", color: "white", marginTop: "0", paddingTop: "3rem" }}>
+                <div>
+                    <h1 style={{ fontSize: "3rem", fontWeight: "Bold", fontFamily: "-moz-initial" }}>
+                        Animacy & Normative Data
+                    </h1>
                 </div>
                 <SearchNav />
-            </span>
-            <SearchBox setSearchTerm={setSearchTerm} />
-            <WordTable searchTerm={searchTerm} />
-            <InfoTable searchTerm={searchTerm} />
+            </div>
+            <SearchBox setSearchTerms={setSearchTerms} />
+            <WordTable searchTerms={searchTerms} />
+            <InfoTable/>
         </div>
     );
 }
