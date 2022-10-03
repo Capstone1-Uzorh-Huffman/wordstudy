@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SearchNav from "./components/SearchNav";
 import SearchBox from "./components/SearchBox";
 import WordTable from "./components/WordTable";
+import AttributeSearch from "./components/AttributeSearch";
 import InfoTable from "./components/InfoTable";
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
                 <SearchNav />
             </div>
             <SearchBox setSearchTerms={setSearchTerms} />
+            <AttributeSearch />
             <WordTable searchTerms={searchTerms} />
-            <InfoTable/>
+            <InfoTable />
         </div>
     );
 }
