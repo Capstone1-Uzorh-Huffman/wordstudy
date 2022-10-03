@@ -3,11 +3,32 @@ import Card from "react-bootstrap/Card";
 import { words } from "../data/data";
 
 function WordTable(props) {
+    const searchWord = props.searchTerms;
+    let searchWords = searchWord.split(",");
+    searchWords = searchWords.map((word) => {
+        return word.trim().toLowerCase();
+    });
+    console.log(searchWords);
+    console.log(searchWords.toString());
+
+    function findWord(word) {
+        if (searchWords.includes(word)) {
+            return word;
+        }
+    }
+
+    let finalList = words;
+    if (searchWords[0] !== "") {
+        finalList = words.filter((word) => {
+            return findWord(word.Word);
+        });
+    }
+
     return (
-        <Card style={{ maxWidth: "92.5rem", margin: "4rem", overflow: "auto" }}>
-            <Table striped bordered hover size="sm">
+        <Card style={{ maxWidth: "92%", margin: "auto", marginTop: "3rem", overflow: "auto" }}>
+            <Table bordered hover size="sm">
                 <thead>
-                    <tr style={{ borderBottom: "solid 0.1rem" }}>
+                    <tr key="col" style={{ borderBottom: "solid 0.1rem" }}>
                         <th style={{ borderRight: "solid 0.05rem" }}>Word</th>
                         <th>Category</th>
                         <th>Living</th>
@@ -54,9 +75,9 @@ function WordTable(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    {words.map((word) => {
+                    {finalList.map((word) => {
                         return (
-                            <tr>
+                            <tr key={word.Word}>
                                 <td style={{ borderRight: "solid 0.05em" }}>{word.Word}</td>
                                 <td>{word.Category}</td>
                                 <td>{word.Living}</td>
