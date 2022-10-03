@@ -5,6 +5,7 @@ import SearchNav from "./components/SearchNav";
 import SearchBox from "./components/SearchBox";
 import WordTable from "./components/WordTable";
 import AttributeSearch from "./components/AttributeSearch";
+import InfoTable from "./components/InfoTable";
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
@@ -21,6 +22,7 @@ function App() {
             <SearchBox setSearchTerms={setSearchTerms} />
             <AttributeSearch />
             <WordTable searchTerms={searchTerms} />
+            <InfoTable />
         </div>
     );
 }
