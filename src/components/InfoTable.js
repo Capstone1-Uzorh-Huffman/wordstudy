@@ -8,10 +8,10 @@ function InfoTable(props) {
     return (
         <div>
             <Card style={{ maxWidth: "92.5rem", margin: "4rem", overflow: "auto" }}>
-                <Table striped bordered hover size="sm">
+                <Table bordered hover size="sm">
                     <thead>
                         <tr style={{ borderBottom: "solid 0.1rem" }}>
-                            <th style={{ borderRight: "solid 0.05rem" }}>Word</th>
+                            <th style={{ borderRight: "solid 0.1rem" }}>Word</th>
                             <th>Description</th>
                         </tr>
                     </thead>
@@ -19,8 +19,10 @@ function InfoTable(props) {
                         {wordDescriptions.map((wordDescriptions) => {
                             return (
                                 <tr>
-                                    <td style={{ borderRight: "solid 0.05em" }}>{wordDescriptions.Word}</td>
-                                    <td>{wordDescriptions.Description}</td>
+                                    <td style={{ borderRight: "solid 0.1rem" }}>{wordDescriptions.Word}</td>
+                                    <td style={{ margin: "auto", alignSelf: "left", display: "flex" }}>
+                                        {wordDescriptions.Description}
+                                    </td>
                                 </tr>
                             );
                         })}
