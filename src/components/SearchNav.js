@@ -1,4 +1,5 @@
 import Nav from "react-bootstrap/Nav";
+import "../style.scss";
 
 
 
@@ -6,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 
 function SearchNav(props) {
     return (
-        <div style={{ marginTop: "5rem" }}>
+        <div className={"sn-wrapper"}>
             <Nav fill variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>
                     <Nav.Link href="/home" >Search by words</Nav.Link>
