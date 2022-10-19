@@ -1,15 +1,13 @@
 import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Animacy from "./categories/Animacy";
 
 function AttributeSearch(props) {
     return (
-        <Card style={{ margin: "auto", maxWidth: "90%", justifySelf: "center", padding: "none" }}>
-            <Card.Body style={{ minWidth: "100%" }}>
-                <Container>
-                    <Row>
+        <Card className="as-wrapper">
+            <Card.Body>
+                    <Row className="as-row">
                         <Col>
                             <Animacy />
                         </Col>
@@ -17,7 +15,7 @@ function AttributeSearch(props) {
                             <Animacy />
                         </Col>
                     </Row>
-                    <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
+                    <Row className="as-row">
                         <Col>
                             <Animacy />
                         </Col>
@@ -25,7 +23,7 @@ function AttributeSearch(props) {
                             <Animacy />
                         </Col>
                     </Row>
-                    <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
+                    <Row className="as-row">
                         <Col>
                             <Animacy />
                         </Col>
@@ -33,12 +31,14 @@ function AttributeSearch(props) {
                             <Animacy />
                         </Col>
                     </Row>
-                    <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
-                        <Col md="8">
+                    <Row className="as-row">
+                        <Col>
+                            <Animacy />
+                        </Col>
+                        <Col>
                             <Animacy />
                         </Col>
                     </Row>
-                </Container>
             </Card.Body>
         </Card>
     );

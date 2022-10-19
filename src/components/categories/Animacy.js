@@ -19,13 +19,24 @@ function Animacy() {
                                 </Form.Group>
                             </Col>
                             <Col>
-                                <Form.Select aria-label="Default select example">
-                                    <option>...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </Form.Select>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
                             </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col></Col>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Thought" />
@@ -34,12 +45,23 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="..."
+                                        placeholder="Min"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
                             </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Repro" />
@@ -48,7 +70,40 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="..."
+                                        placeholder="Min"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col></Col>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Move" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -62,13 +117,24 @@ function Animacy() {
                                 </Form.Group>
                             </Col>
                             <Col>
-                                <Form.Select aria-label="Default select example">
-                                    <option>...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </Form.Select>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
                             </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col></Col>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Goals" />
@@ -77,21 +143,16 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="..."
+                                        placeholder="Min"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
                             </Col>
                             <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Move" />
-                                </Form.Group>
-                            </Col>
-                            <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="..."
+                                        placeholder="Max"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />

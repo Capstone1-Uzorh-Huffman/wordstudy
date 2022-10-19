@@ -12,11 +12,9 @@ function App() {
     const [searchTerms, setSearchTerms] = useState("");
     return (
         <div className="App">
-            <div style={{ backgroundColor: "black", color: "white", marginTop: "0", paddingTop: "3rem" }}>
+            <div className="app-wrapper">
                 <div>
-                    <h1 style={{ fontSize: "3rem", fontWeight: "Bold", fontFamily: "-moz-initial" }}>
-                        Animacy & Normative Data
-                    </h1>
+                    <h1 className="app-header">Animacy & Normative Data</h1>
                 </div>
                 <SearchNav />
             </div>
