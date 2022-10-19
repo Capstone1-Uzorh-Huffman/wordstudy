@@ -1,6 +1,7 @@
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import { words } from "../data/data";
+import "../style.scss";
 
 function WordTable(props) {
     const searchWord = props.searchTerms;
@@ -25,11 +26,11 @@ function WordTable(props) {
     }
 
     return (
-        <Card style={{ maxWidth: "92%", margin: "auto", marginTop: "3rem", overflow: "auto" }}>
-            <Table bordered hover size="sm">
+        <Card className={"wt-wrapper"}>
+            <Table className={"wt-table"} bordered hover size="sm">
                 <thead>
-                    <tr key="col" style={{ borderBottom: "solid 0.1rem" }}>
-                        <th style={{ borderRight: "solid 0.05rem" }}>Word</th>
+                    <tr key="col" className={"wt-row"}>
+                        <th className={"wt-th"}>Word</th>
                         <th>Category</th>
                         <th>Living</th>
                         <th>Thought</th>
@@ -78,7 +79,7 @@ function WordTable(props) {
                     {finalList.map((word) => {
                         return (
                             <tr key={word.Word}>
-                                <td style={{ borderRight: "solid 0.05em" }}>{word.Word}</td>
+                                <td className={"wt-th"}>{word.Word}</td>
                                 <td>{word.Category}</td>
                                 <td>{word.Living}</td>
                                 <td>{word.Thought}</td>

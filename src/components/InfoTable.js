@@ -1,72 +1,54 @@
-import Table from "react-bootstrap/Table";
-import Card from "react-bootstrap/Card";
 import { wordDescriptions } from "../data/info.js";
 import { abbreviations } from "../data/abbreviation.js";
 import { resources } from "../data/resources.js";
+import "../style.scss";
 
 function InfoTable(props) {
     return (
         <div>
-            <Card style={{ maxWidth: "92.5rem", margin: "4rem", overflow: "auto" }}>
-                <Table bordered hover size="sm">
-                    <thead>
-                        <tr style={{ borderBottom: "solid 0.1rem" }}>
-                            <th style={{ borderRight: "solid 0.1rem" }}>Word</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {wordDescriptions.map((wordDescriptions) => {
-                            return (
-                                <tr>
-                                    <td style={{ borderRight: "solid 0.1rem" }}>{wordDescriptions.Word}</td>
-                                    <td style={{ margin: "auto", alignSelf: "left", display: "flex" }}>
-                                        {wordDescriptions.Description}
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </Table>
-            </Card>
-            <Card style={{ maxWidth: "92.5rem", margin: "4rem", overflow: "auto" }}>
-                <Table striped bordered hover size="sm">
-                    <thead>
-                        <tr style={{ borderBottom: "solid 0.1rem" }}>
-                            <th style={{ borderRight: "solid 0.05rem" }}>Abrevation</th>
-                            <th>Definition</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {abbreviations.map((abbreviations) => {
-                            return (
-                                <tr>
-                                    <td style={{ borderRight: "solid 0.05em" }}>{abbreviations.Abrevation}</td>
-                                    <td>{abbreviations.Definition}</td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </Table>
-            </Card>
-            <Card style={{ maxWidth: "92.5rem", margin: "4rem", overflow: "auto" }}>
-                <Table striped bordered hover size="sm">
-                    <thead>
-                        <tr style={{ borderBottom: "solid 0.1rem" }}>
-                            <th style={{ borderRight: "solid 0.05rem" }}>Resources</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {resources.map((resources) => {
-                            return (
-                                <tr>
-                                    <td style={{ borderRight: "solid 0.05em" }}>{resources.Reference}</td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </Table>
-            </Card>
+            <div className={"infoCard"}>
+                <h1 className={"infoCardTitle"}>Word Definitions</h1>
+                <div className={"wd-table2col"}>
+                    {wordDescriptions.map((wordDescriptions) => {
+                        return (
+                            <div className={"wd-row"}>
+                                <p>
+                                    <div className={"wd-word"}>{wordDescriptions.Word}</div>
+                                    <div className={"wd-des"}>{wordDescriptions.Description}</div>
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <div className={"infoCard"}>
+                <h1 className={"infoCardTitle"}>Abrevations</h1>
+                <div className={"wd-table4col"}>
+                    {abbreviations.map((abbreviations) => {
+                        return (
+                            <div className={"wd-row"}>
+                                <p>
+                                    <strong>{abbreviations.Abrevation}</strong> : {abbreviations.Definition}
+                                </p>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <div className={"infoCard"}>
+                <h1 className={"infoCardTitle"}>Resources</h1>
+                <div className={"wd-table1"}>
+                    {resources.map((resources) => {
+                        return (
+                            <div className={"wd-row"}>
+                                <p>{resources.Reference}</p>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
         </div>
     );
 }
