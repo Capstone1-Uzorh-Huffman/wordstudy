@@ -1,0 +1,112 @@
+.app-wrapper {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding-top: 3rem;
+}
+
+.app-header {
+    font-size: 3rem;
+    font-weight: Bold;
+    font-family: "-moz-initial"
+}
+
+.infoCard {
+    width: 80rem; 
+    margin: auto; 
+    margin-top: 5rem;
+    border: none;
+}
+
+.infoCardTitle {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.wd-row {
+    display: block;
+    text-align: left;
+}
+
+.wd-table1 {
+    display: block;
+}
+
+.wd-table4col {
+    display: block;
+    columns: 4;
+}
+
+.wd-table2col {
+    display: block;
+    columns: 2;
+}
+
+.wd-word {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.wd-des {
+    font-style:oblique;
+}
+
+.sn-wrapper {
+    margin-top: 5rem;
+}
+
+.sb-group {
+    width: 80rem;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5rem;
+    border: none;
+    height: 3rem;
+}
+
+.sb-text {
+    background-color: black; 
+    color: white;
+    border: 1em; 
+    font-weight: bold;
+}
+
+.wt-wrapper {
+    max-width: 92%;
+    margin: auto;
+    margin-top: 3rem; 
+    overflow: auto;
+    padding: none;
+}
+
+.wt-table {
+    margin: 0;
+}
+
+.wt-row {
+    border-bottom: solid 0.1rem;
+}
+
+.wt-th {
+    border-right: solid 0.05rem;
+}
+
+.as-wrapper {
+    margin: auto; 
+    max-width: 90%;
+    justify-self: center; 
+    padding: none;
+}
+
+.as-row {
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+.anim-textbox {
+    font-size: small;
+    padding: 0.5;
+}
