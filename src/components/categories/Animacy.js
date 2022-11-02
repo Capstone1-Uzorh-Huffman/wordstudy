@@ -97,6 +97,34 @@ function Animacy() {
                                     />
                                 </InputGroup>
                             </Col>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Mental" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="..."
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Physical" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="..."
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
                         </Row>
                     </Container>
                 </Accordion.Body>

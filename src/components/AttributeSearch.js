@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Animacy from "./categories/Animacy";
+import Lexical from "./categories/Lexical";
 
 function AttributeSearch(props) {
     return (
@@ -14,7 +15,7 @@ function AttributeSearch(props) {
                             <Animacy />
                         </Col>
                         <Col>
-                            <Animacy />
+                            <Lexical />
                         </Col>
                     </Row>
                     <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
