@@ -4,6 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Animacy from "./categories/Animacy";
 import Lexical from "./categories/Lexical";
+import Category from "./categories/Category";
+import Context from "./categories/Context";
+import Emotion from "./categories/Emotion";
+import Meaningfulness from "./categories/Meaningfulness";
+import Recall from "./categories/Recall";
+import SimpleWords from "./categories/SimpleWords";
 
 function AttributeSearch(props) {
     return (
@@ -20,23 +26,26 @@ function AttributeSearch(props) {
                     </Row>
                     <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
                         <Col>
-                            <Animacy />
+                            <Category />
                         </Col>
                         <Col>
-                            <Animacy />
+                            <Context />
                         </Col>
                     </Row>
                     <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
                         <Col>
-                            <Animacy />
+                            <Emotion />
                         </Col>
                         <Col>
-                            <Animacy />
+                            <Meaningfulness />
                         </Col>
                     </Row>
                     <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
-                        <Col md="8">
-                            <Animacy />
+                        <Col >
+                            <Recall />
+                        </Col>
+                        <Col>
+                            <SimpleWords />
                         </Col>
                     </Row>
                 </Container>
