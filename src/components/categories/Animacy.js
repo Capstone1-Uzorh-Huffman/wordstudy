@@ -86,7 +86,8 @@ function Animacy() {
                                     />
                                 </InputGroup>
                             </Col>
-                            <Col></Col>
+                        </Row>
+                        <Row>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Move" />
@@ -120,7 +121,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -129,7 +130,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -137,16 +138,6 @@ function Animacy() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col></Col>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Goals" />
