@@ -21,7 +21,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -30,7 +30,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -46,7 +46,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -55,7 +55,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -71,7 +71,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -80,7 +80,31 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col></Col>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Move" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -114,6 +138,16 @@ function Animacy() {
                         </Row>
                         <Row>
                             <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col></Col>
+                            <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Goals" />
                                 </Form.Group>
@@ -121,41 +155,16 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min:"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Move" />
-                                </Form.Group>
                             </Col>
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
                                         placeholder="Max:"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -171,7 +180,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -180,7 +189,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -196,7 +205,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Max:"
+                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -205,7 +214,7 @@ function Animacy() {
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
-                                        placeholder="Min:"
+                                        placeholder="Max:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
