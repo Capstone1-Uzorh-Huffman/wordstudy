@@ -2,6 +2,13 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Animacy from "./categories/Animacy";
+import Lexical from "./categories/Lexical";
+import Category from "./categories/Category";
+import Context from "./categories/Context";
+import Emotion from "./categories/Emotion";
+import Meaningfulness from "./categories/Meaningfulness";
+import Recall from "./categories/Recall";
+import SimpleWords from "./categories/SimpleWords";
 
 function AttributeSearch(props) {
     return (
@@ -12,31 +19,31 @@ function AttributeSearch(props) {
                             <Animacy />
                         </Col>
                         <Col>
-                            <Animacy />
+                            <Lexical />
                         </Col>
                     </Row>
                     <Row className="as-row">
                         <Col>
-                            <Animacy />
+                            <Category />
                         </Col>
                         <Col>
-                            <Animacy />
-                        </Col>
-                    </Row>
-                    <Row className="as-row">
-                        <Col>
-                            <Animacy />
-                        </Col>
-                        <Col>
-                            <Animacy />
+                            <Context />
                         </Col>
                     </Row>
                     <Row className="as-row">
                         <Col>
-                            <Animacy />
+                            <Emotion />
                         </Col>
                         <Col>
-                            <Animacy />
+                            <Meaningfulness />
+                        </Col>
+                    </Row>
+                    <Row style={{ justifyContent: "center", marginTop: "1rem" }}>
+                        <Col >
+                            <Recall />
+                        </Col>
+                        <Col>
+                            <SimpleWords />
                         </Col>
                     </Row>
             </Card.Body>

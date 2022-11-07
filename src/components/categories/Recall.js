@@ -5,116 +5,17 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 
-function Animacy() {
+function Recall() {
     return (
         <Accordion>
             <Accordion.Item eventKey="0">
-                <Accordion.Header>Animacy</Accordion.Header>
+                <Accordion.Header>Recall</Accordion.Header>
                 <Accordion.Body>
                     <Container>
                         <Row>
                             <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Living" />
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Thought" />
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Repro" />
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min:"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max:"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col></Col>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Move" />
-                                </Form.Group>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Person" />
+                                    <Form.Check type="checkbox" label="R1Overall" />
                                 </Form.Group>
                             </Col>
                             <Col>
@@ -138,28 +39,9 @@ function Animacy() {
                         </Row>
                         <Row>
                             <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Max"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
-                            </Col>
-                            <Col></Col>
-                            <Col>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Goals" />
+                                    <Form.Check type="checkbox" label="R2Overall" />
                                 </Form.Group>
-                            </Col>
-                            <Col>
-                                <InputGroup className="mb-3">
-                                    <Form.Control
-                                        placeholder="Min"
-                                        aria-label="Username"
-                                        aria-describedby="basic-addon1"
-                                    />
-                                </InputGroup>
                             </Col>
                             <Col>
                                 <InputGroup className="mb-3">
@@ -169,13 +51,6 @@ function Animacy() {
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Mental" />
-                                </Form.Group>
                             </Col>
                             <Col>
                                 <InputGroup className="mb-3">
@@ -186,6 +61,13 @@ function Animacy() {
                                     />
                                 </InputGroup>
                             </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R3Overall" />
+                                </Form.Group>
+                            </Col>
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
@@ -194,13 +76,6 @@ function Animacy() {
                                         aria-describedby="basic-addon1"
                                     />
                                 </InputGroup>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                    <Form.Check type="checkbox" label="Physical" />
-                                </Form.Group>
                             </Col>
                             <Col>
                                 <InputGroup className="mb-3">
@@ -211,10 +86,226 @@ function Animacy() {
                                     />
                                 </InputGroup>
                             </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R_totOverall" />
+                                </Form.Group>
+                            </Col>
                             <Col>
                                 <InputGroup className="mb-3">
                                     <Form.Control
                                         placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R1Lab" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R2Lab" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R3Lab" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R_totLab" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R1Online" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R2Online" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R3Online" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="R_totOnline" />
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Max:"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                </InputGroup>
+                            </Col>
+                            <Col>
+                                <InputGroup className="mb-3">
+                                    <Form.Control
+                                        placeholder="Min:"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -228,4 +319,4 @@ function Animacy() {
     );
 }
 
-export default Animacy;
+export default Recall;
