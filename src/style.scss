@@ -1,18 +1,16 @@
-.app-wrapper {
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    padding-top: 3rem;
-}
-
 .app-header {
     font-size: 3rem;
     font-weight: Bold;
-    font-family: "-moz-initial"
+    font-family: "-moz-initial";
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3rem;
 }
 
 .infoCard {
-    width: 80rem; 
+    width: 90%; 
     margin: auto; 
     margin-top: 5rem;
     border: none;
@@ -27,10 +25,12 @@
 .wd-row {
     display: block;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .wd-table1 {
     display: block;
+    padding-bottom: 5rem;
 }
 
 .wd-table4col {
@@ -53,7 +53,23 @@
 }
 
 .sn-wrapper {
-    margin-top: 5rem;
+    padding-top: 5rem;
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav {
+    --bs-nav-link-hover-color: lightgrey;
+    --bs-nav-tabs-link-hover-border-color: lightgrey;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-link-active-color: black
 }
 
 .sb-group {
@@ -62,7 +78,6 @@
     justify-content: center;
     margin-top: 5rem;
     border: none;
-    height: 3rem;
 }
 
 .sb-text {
@@ -93,7 +108,8 @@
 }
 
 .as-wrapper {
-    margin: auto; 
+    margin: auto;
+    margin-top: 5rem; 
     max-width: 90%;
     justify-self: center; 
     padding: none;
@@ -104,9 +120,26 @@
     margin-top: 1rem;
 }
 
-
+.infoTable-pair {
+    margin-bottom: 2.5rem;
+}
 
 .anim-textbox {
     font-size: small;
     padding: 0.5;
+}
+
+.lt-accord {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.lt-card {
+    margin: auto; 
+    overflow: auto;
+    padding: none;
 }

@@ -12,10 +12,10 @@ function InfoTable(props) {
                     {wordDescriptions.map((wordDescriptions) => {
                         return (
                             <div className={"wd-row"}>
-                                <p>
+                                <div className="infoTable-pair">
                                     <div className={"wd-word"}>{wordDescriptions.Word}</div>
                                     <div className={"wd-des"}>{wordDescriptions.Description}</div>
-                                </p>
+                                </div>
                             </div>
                         );
                     })}
@@ -43,7 +43,7 @@ function InfoTable(props) {
                     {resources.map((resources) => {
                         return (
                             <div className={"wd-row"}>
-                                <p>{resources.Reference}</p>
+                                <li>{resources.Reference}</li>
                             </div>
                         );
                     })}
