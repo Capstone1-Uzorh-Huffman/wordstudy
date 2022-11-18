@@ -13,43 +13,23 @@ function Category() {
                     <Container>
                         <Row>
                             <Col>
-                                <Accordion>
+                                <Accordion className="categories">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Animal</Accordion.Header>
                                         <Accordion.Body>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Bird" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Fish" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Insect" />
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Mammal" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Other" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Reptile" />
-                                                    </Form.Group>
-                                                </Col>
+                                            <Row className="mb-3">
+                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                    <Form.Check className="checkLabel" type="checkbox" label="Bird" />
+                                                    <Form.Check className="checkLabel" type="checkbox" label="Fish" />
+                                                    <Form.Check className="checkLabel" type="checkbox" label="Insect" />
+                                                    <Form.Check className="checkLabel" type="checkbox" label="Mammal" />
+                                                    <Form.Check className="checkLabel" type="checkbox" label="Other" />
+                                                    <Form.Check
+                                                        className="checkLabel"
+                                                        type="checkbox"
+                                                        label="Reptile"
+                                                    />
+                                                </Form.Group>
                                             </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -58,33 +38,17 @@ function Category() {
                         </Row>
                         <Row>
                             <Col>
-                                <Accordion>
+                                <Accordion className="categories">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Enviroment</Accordion.Header>
                                         <Accordion.Body>
                                             <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Areas" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Buildings" />
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Celestial Bodies" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Landscapes" />
-                                                    </Form.Group>
-                                                </Col>
+                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                    <Form.Check type="checkbox" label="Areas" />
+                                                    <Form.Check type="checkbox" label="Buildings" />
+                                                    <Form.Check type="checkbox" label="Celestial Bodies" />
+                                                    <Form.Check type="checkbox" label="Landscapes" />
+                                                </Form.Group>
                                             </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -93,33 +57,17 @@ function Category() {
                         </Row>
                         <Row>
                             <Col>
-                                <Accordion>
+                                <Accordion className="categories">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Human</Accordion.Header>
                                         <Accordion.Body>
                                             <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Actor" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Descriptor" />
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Profession" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Relative" />
-                                                    </Form.Group>
-                                                </Col>
+                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                    <Form.Check type="checkbox" label="Actor" />
+                                                    <Form.Check type="checkbox" label="Descriptor" />
+                                                    <Form.Check type="checkbox" label="Profession" />
+                                                    <Form.Check type="checkbox" label="Relative" />
+                                                </Form.Group>
                                             </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -128,60 +76,22 @@ function Category() {
                         </Row>
                         <Row>
                             <Col>
-                                <Accordion>
+                                <Accordion className="categories">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Object</Accordion.Header>
                                         <Accordion.Body>
                                             <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Clothing" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Food & Drinks" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Furniture" />
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Instruments" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Manmade (Misc)" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Natural" />
-                                                    </Form.Group>
-                                                </Col>
-                                            </Row>
-                                            <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Other" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Tool" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Weapon" />
-                                                    </Form.Group>
-                                                </Col>
+                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                    <Form.Check type="checkbox" label="Clothing" />
+                                                    <Form.Check type="checkbox" label="Food & Drinks" />
+                                                    <Form.Check type="checkbox" label="Furniture" />
+                                                    <Form.Check type="checkbox" label="Instruments" />
+                                                    <Form.Check type="checkbox" label="Man-made" />
+                                                    <Form.Check type="checkbox" label="Natural" />
+                                                    <Form.Check type="checkbox" label="Other" />
+                                                    <Form.Check type="checkbox" label="Tool" />
+                                                    <Form.Check type="checkbox" label="Weapon" />
+                                                </Form.Group>
                                             </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -190,21 +100,15 @@ function Category() {
                         </Row>
                         <Row>
                             <Col>
-                                <Accordion>
+                                <Accordion className="categories">
                                     <Accordion.Item eventKey="0">
                                         <Accordion.Header>Plants</Accordion.Header>
                                         <Accordion.Body>
                                             <Row>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Edible" />
-                                                    </Form.Group>
-                                                </Col>
-                                                <Col>
-                                                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                        <Form.Check type="checkbox" label="Inedible" />
-                                                    </Form.Group>
-                                                </Col>
+                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                    <Form.Check type="checkbox" label="Edible" />
+                                                    <Form.Check type="checkbox" label="Inedible" />
+                                                </Form.Group>
                                             </Row>
                                         </Accordion.Body>
                                     </Accordion.Item>
@@ -212,48 +116,20 @@ function Category() {
                             </Col>
                         </Row>
                         <Col>
-                            <Accordion>
+                            <Accordion className="categories">
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Other</Accordion.Header>
                                     <Accordion.Body>
                                         <Row>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Body Part" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Collective Noun" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Living Thing (Misc.)" />
-                                                </Form.Group>
-                                            </Col>
-                                        </Row>
-                                        <Row>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Ambiguous" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Supernatural" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Vehicle" />
-                                                </Form.Group>
-                                            </Col>
-                                            <Col>
-                                                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                                    <Form.Check type="checkbox" label="Weather" />
-                                                </Form.Group>
-                                            </Col>
+                                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                                <Form.Check type="checkbox" label="Body Part" />
+                                                <Form.Check type="checkbox" label="Collective Noun" />
+                                                <Form.Check type="checkbox" label="Living Thing (Misc.)" />
+                                                <Form.Check type="checkbox" label="Ambiguous" />
+                                                <Form.Check type="checkbox" label="Supernatural" />
+                                                <Form.Check type="checkbox" label="Vehicle" />
+                                                <Form.Check type="checkbox" label="Weather" />
+                                            </Form.Group>
                                         </Row>
                                     </Accordion.Body>
                                 </Accordion.Item>

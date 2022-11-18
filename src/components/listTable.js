@@ -5,6 +5,21 @@ import "../style.scss";
 import Accordion from "react-bootstrap/Accordion";
 
 function ListTable(props) {
+    let filtered = [];
+
+    function between(value, min, max) {
+        return min <= value && max >= value;
+    }
+
+    function filters(col, min, max) {
+        words.filter((word) => {
+            if (between(word.col, min, max)) {
+                filtered.append(word);
+            }
+        });
+        return filtered;
+    }
+
     return (
         <Accordion className="lt-accord">
             <Accordion.Item eventKey="0">
@@ -60,7 +75,7 @@ function ListTable(props) {
                                 </tr>
                             </thead>
                             <tbody>
-                                {words.map((word) => {
+                                {filtered.map((word) => {
                                     return (
                                         <tr key={word.Word}>
                                             <td className={"wt-th"}>{word.Word}</td>
