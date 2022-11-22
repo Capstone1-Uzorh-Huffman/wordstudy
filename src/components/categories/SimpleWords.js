@@ -9,7 +9,7 @@ function SimpleWords() {
     return (
         <Accordion>
             <Accordion.Item eventKey="0">
-                <Accordion.Header>Simple Words</Accordion.Header>
+                <Accordion.Header>Images/Age of Acquisitions/Word Concreteness</Accordion.Header>
                 <Accordion.Body>
                     <Container>
                         <Row>

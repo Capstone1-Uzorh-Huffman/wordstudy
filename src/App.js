@@ -16,7 +16,7 @@ function App() {
         <div className="App">
             <h1 className="app-header">Animacy & Normative Data</h1>
             <Tabs defaultActiveKey="home" className="mb-3 sn-wrapper" justify>
-                <Tab eventKey="home" title="Find Words">
+                <Tab eventKey="home" title="Find Word Attributes">
                     <SearchBox setSearchTerms={setSearchTerms} />
                     <WordTable searchTerms={searchTerms} />
                 </Tab>
