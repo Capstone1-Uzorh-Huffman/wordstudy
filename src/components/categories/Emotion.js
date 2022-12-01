@@ -1,5 +1,5 @@
-import CategoryHolder from "./CategoryHolder";
-import CategoryList from "./CategoryList";
+import CategoryHolder from "../utility_compoents/CategoryHolder";
+import CategoryList from "../utility_compoents/CategoryList";
 
 function Emotion() {
     const labels = ["DOM", "VAL", "ARO"];

@@ -148,8 +148,26 @@
     margin-bottom: 1rem;
 }
 
-.checklabel {
-display: flex;
-float: left;
-margin-right: 0.1rem;
+.checkLabel {
+    margin-right: 3rem;
+    display:inline-flex;
+}
+
+.checkInput {
+    margin-right: 0.5rem;
+}
+
+.filters{
+    margin-left: 6%;
+    padding-top: 1.5rem;
+    display: flex;
+}
+
+.badge{
+    margin-right: 0.5rem;
+    margin-left: 00.5rem;
+}
+
+.ctg{
+    margin-bottom: 1rem;
 }

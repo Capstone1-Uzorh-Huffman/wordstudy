@@ -1,11 +1,11 @@
-import CategoryHolder from "./CategoryHolder";
-import CategoryList from "./CategoryList";
+import CategoryHolder from "../utility_compoents/CategoryHolder";
+import CategoryList from "../utility_compoents/CategoryList";
 
 function SimpleWords() {
     const labels = ["IMG", "CNC", "AoA"];
 
     return (
-        <CategoryHolder FilterHeader={"Simple Words"}>
+        <CategoryHolder FilterHeader={"Semantics"}>
             {labels.map((label) => (
                 <CategoryList FilterLabel={label} />
             ))}
