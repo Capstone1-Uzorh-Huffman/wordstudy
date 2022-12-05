@@ -1,6 +1,6 @@
 import Row from "react-bootstrap/Row";
-import CategoryHolder from "../utility_components/CategoryHolder";
-import CheckBox from "../utility_components/CheckBox";
+import CategoryHolder from "../utility_compoents/CategoryHolder";
+import CheckBox from "../utility_compoents/CheckBox";
 
 function Category(props) {
     const Animal = [

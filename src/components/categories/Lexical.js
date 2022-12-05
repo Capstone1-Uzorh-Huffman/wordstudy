@@ -1,5 +1,5 @@
-import CategoryHolder from "../utility_components/CategoryHolder";
-import CategoryList from "../utility_components/CategoryList";
+import CategoryHolder from "../utility_compoents/CategoryHolder";
+import CategoryList from "../utility_compoents/CategoryList";
 
 function Lexical(props) {
     const labels = ["LEN", "OrthoN", "PhonoN", "NSyll"];
