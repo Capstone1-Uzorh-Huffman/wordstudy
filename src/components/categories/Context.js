@@ -1,5 +1,5 @@
-import CategoryHolder from "../utility_compoents/CategoryHolder";
-import CategoryList from "../utility_compoents/CategoryList";
+import CategoryHolder from "../utility_components/CategoryHolder";
+import CategoryList from "../utility_components/CategoryList";
 
 function Context(props) {
     const labels = ["SUBTLWF", "SUBTLCD", "AVAIL"];
