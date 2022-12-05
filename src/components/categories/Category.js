@@ -56,54 +56,42 @@ function Category(props) {
                 <Row className="ctg">
                     <CategoryHolder FilterHeader={"Animal"}>
                         {Animal.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>
                 <Row className="ctg">
                     <CategoryHolder className="ctg" FilterHeader={"Enviroment"}>
                         {Enviroment.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>
                 <Row className="ctg">
                     <CategoryHolder className="ctg" FilterHeader={"Human"}>
                         {Human.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>
                 <Row className="ctg">
                     <CategoryHolder FilterHeader={"Object"}>
                         {Object.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>
                 <Row className="ctg">
                     <CategoryHolder FilterHeader={"Plants"}>
                         {Plants.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>
                 <Row className="ctg">
                     <CategoryHolder FilterHeader={"Other"}>
                         {Other.map((label) => {
-                            return (
-                                <CheckBox updateFilter={props.updateFilter} label={label} checkBoxLabel={label.key} />
-                            );
+                            return <CheckBox updateFilter={props.updateFilter} Label={label} />;
                         })}
                     </CategoryHolder>
                 </Row>

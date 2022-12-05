@@ -10,43 +10,69 @@ import Tabs from "react-bootstrap/Tabs";
 import "./style.scss";
 import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
+import SplitTable from "./components/page_components/SplitTable";
+
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
     const [filterTerms, setFilterTerms] = useState([]);
+    const [minMaxFilter, setMaxFilter] = useState(new Map());
+    const [numWord, setNumWords] = ("0");
 
+    const addFilter = ({ label, min, max }) => {
+        setMaxFilter((map) => new Map(map.set(label, { min, max })));
+    };
+
+    const removeFilter = (label) => {
+        setMaxFilter((map) => {
+            map.delete(label);
+            return new Map(map);
+        });
+    };
+
+    const getMinMaxArray = () => {
+        const minMaxArray = [];
+        minMaxFilter.forEach((item, label) => {
+            minMaxArray.push({ label: label, min: item.min, max: item.max });
+        });
+
+        return minMaxArray;
+    };
     /**
      *
      * @param {*} filterItem
      * @param {*} operation
      */
-    const updateFilter = (filterItem, operation = false) => {
+    const updateFilter = (filterItem, status) => {
         let temp = filterTerms;
-        if (operation) {
+        if (status) {
             temp.push(filterItem);
         } else {
-            temp = temp.filter((item) => {
-                return item.key !== filterItem.key;
-            });
+            temp.splice(temp.indexOf(filterItem), 1);
         }
-
-        setFilterTerms(temp);
+        console.log(temp);
+        setFilterTerms([...temp]);
     };
 
     return (
         <div className="App">
-            <h1 className="app-header">Animacy & Normative Data</h1>
+            <h1 className="app-header">{`Animacy & Normative Data`}</h1>
             <Tabs defaultActiveKey="home" className="mb-3 sn-wrapper" justify>
                 <Tab eventKey="home" title="Find Word Attributes">
                     <SearchBox setSearchTerms={setSearchTerms} />
                     <WordTable searchTerms={searchTerms} />
                 </Tab>
                 <Tab eventKey="search" title="Create Word Lists">
-                    <AttributeSearch updateFilter={updateFilter} />
-                    <FilterList />
-                    <ListTable filterTerms={filterTerms} />
-                    <ListTable />
-                    <ListTable />
+                    <AttributeSearch
+                        updateFilter={updateFilter}
+                        setFilterMinMax={addFilter}
+                        removeFilter={removeFilter}
+                    />
+                    <FilterList filterTerms={filterTerms} filterMinMax={getMinMaxArray()} />
+                    <SplitTable setNumWords={setNumWords}/>
+                    <ListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} tableName={"Full List"} />
+                    <ListTable tableName={"List 1"} />
+                    <ListTable tableName={"List 2"} />
                 </Tab>
                 <Tab eventKey="info" title="More Information">
                     <InfoTable />

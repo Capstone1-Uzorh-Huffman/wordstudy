@@ -1,135 +1,131 @@
-export const abbreviations = [
+export const Abbreviations = [
 
-    //separate
-    // {
-    //     Abrevation: "Category Abbreviations"
-    // },
     {
-        Abrevation: "A B",
+        Abbreviation: "A B",
         Definition: "Animal -- Bird"
     },
     {
-        Abrevation: "A F",
+        Abbreviation: "A F",
         Definition: "Animal -- Fish"
     },
     {
-        Abrevation: "A M",
+        Abbreviation: "A M",
         Definition: "Animal -- Mammal"
     },
     {
-        Abrevation: "A O",
+        Abbreviation: "A O",
         Definition: "Animal -- Other"
     },
     {
-        Abrevation: "A R",
+        Abbreviation: "A R",
         Definition: "Animal -- Reptile"
     },
     {
-        Abrevation: "B",
+        Abbreviation: "B",
         Definition: "Body Part"
     },
     {
-        Abrevation: "C",
+        Abbreviation: "C",
         Definition: "Collective Noun"
     },
     {
-        Abrevation: "E A",
+        Abbreviation: "E A",
         Definition: "Environment -- Areas"
     },
     {
-        Abrevation: "E B",
+        Abbreviation: "E B",
         Definition: "Environment -- Buildings"
     },
     {
-        Abrevation: "E C",
+        Abbreviation: "E C",
         Definition: "Environment -- Celestial Bodies"
     },
     {
-        Abrevation: "E L",
+        Abbreviation: "E L",
         Definition: "Environment -- Landscapes"
     },
     {
-        Abrevation: "H A",
+        Abbreviation: "H A",
         Definition: "Human -- Actor"
     },
     {
-        Abrevation: "H D",
+        Abbreviation: "H D",
         Definition: "Human -- Descriptor"
     },
     {
-        Abrevation: "H P",
+        Abbreviation: "H P",
         Definition: "Human -- Profession"
     },
     {
-        Abrevation: "H R",
+        Abbreviation: "H R",
         Definition: "Human -- Relative"
     },
     {
-        Abrevation: "A I",
+        Abbreviation: "A I",
         Definition: "Animal -- Insect"
     },
     {
-        Abrevation: "L",
+        Abbreviation: "L",
         Definition: "Living Thing -- Miscellaneous"
     },
     {
-        Abrevation: "O C",
+        Abbreviation: "O C",
         Definition: "Object -- Clothing"
     },
     {
-        Abrevation: "O E",
+        Abbreviation: "O E",
         Definition: "Object -- Edible (Food + Drink)"
     },
     {
-        Abrevation: "O F",
+        Abbreviation: "O F",
         Definition: "Object -- Furniture"
     },
     {
-        Abrevation: "O I",
+        Abbreviation: "O I",
         Definition: "Object -- Instruments"
     },
     {
-        Abrevation: "O M",
+        Abbreviation: "O M",
         Definition: "Object -- Manmade (Misc)"
     },
     {
-        Abrevation: "O N",
+        Abbreviation: "O N",
         Definition: "Object -- Natural"
     },
     {
-        Abrevation: "O O",
+        Abbreviation: "O O",
         Definition: "Object -- Other"
     },
     {
-        Abrevation: "O T",
+        Abbreviation: "O T",
         Definition: "Object -- Tool"
     },
     {
-        Abrevation: "O W",
+        Abbreviation: "O W",
         Definition: "Object -- Weapon"
     },
     {
-        Abrevation: "P I",
+        Abbreviation: "P I",
         Definition: "Plants -- Inedible"
     },
     {
-        Abrevation: "P E",
+        Abbreviation: "P E",
         Definition: "Plants -- Edible"
     },
     {
-        Abrevation: "Q",
+        Abbreviation: "Q",
         Definition: "Ambiguous"
     },
     {
-        Abrevation: "S",
+        Abbreviation: "S",
         Definition: "Supernatural"
     },
     {
-        Abrevation: "V",
+        Abbreviation: "V",
         Definition: "Vehicle"
     },
     {
-        Abrevation: "W",
+        Abbreviation: "W",
         Definition: "Weather"
     }
 ]

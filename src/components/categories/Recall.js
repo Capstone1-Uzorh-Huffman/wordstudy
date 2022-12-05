@@ -1,7 +1,7 @@
 import CategoryHolder from "../utility_compoents/CategoryHolder";
 import CategoryList from "../utility_compoents/CategoryList";
 
-function Recall() {
+function Recall(props) {
     const labels = [
         "R1Overall",
         "R2Overall",
@@ -20,7 +20,11 @@ function Recall() {
     return (
         <CategoryHolder FilterHeader={"Recall"}>
             {labels.map((label) => (
-                <CategoryList FilterLabel={label} />
+                <CategoryList
+                    FilterLabel={label}
+                    setFilterMinMax={props.setFilterMinMax}
+                    removeFilter={props.removeFilter}
+                />
             ))}
         </CategoryHolder>
     );
