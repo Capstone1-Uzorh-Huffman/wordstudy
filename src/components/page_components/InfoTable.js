@@ -1,7 +1,6 @@
 import { wordDescriptions } from "../../data/info.js";
 import { Abbreviations } from "../../data/abbreviation.js";
 import { resources } from "../../data/resources.js";
-import "../wordstudy/src/style.scss";
 
 function InfoTable(props) {
     return (
