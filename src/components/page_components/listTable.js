@@ -1,7 +1,6 @@
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import { words } from "../../data/data";
-import "/Users/francisuzorh/wordstudy/src/style.scss";
 import Accordion from "react-bootstrap/Accordion";
 import { useEffect, useState } from "react";
 
@@ -31,7 +30,6 @@ function ListTable(props) {
                 });
             }
 
-            
             if (!filterMinMax || filterMinMax.length === 0) {
                 return [...newFilter];
             }

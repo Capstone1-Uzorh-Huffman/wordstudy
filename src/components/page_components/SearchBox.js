@@ -1,6 +1,5 @@
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import "/Users/francisuzorh/wordstudy/src/style.scss";
 
 function SearchBox(props) {
     return (
