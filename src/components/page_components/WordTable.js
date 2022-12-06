@@ -1,7 +1,6 @@
 import Table from "react-bootstrap/Table";
 import Card from "react-bootstrap/Card";
 import { words } from "../../data/data";
-import "/Users/francisuzorh/wordstudy/src/style.scss";
 
 function WordTable(props) {
     const searchWord = props.searchTerms;
