@@ -140,8 +140,9 @@
 
 .lt-accord-no-Top {
     width: 90%;
+    display: block;
     margin: auto;
-    justify-content: center;
+    justify-content: center !important;
     padding: 0;
     margin-top: none;
     margin-bottom: 3rem;
