@@ -7,6 +7,7 @@ import AttributeSearch from "./components/page_components/AttributeSearch";
 import InfoTable from "./components/page_components/InfoTable";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import Footer from "./components/page_components/Footer";
 import "./style.scss";
 import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
@@ -78,6 +79,7 @@ function App() {
                     <InfoTable />
                 </Tab>
             </Tabs>
+            <Footer></Footer>
         </div>
     );
 }
