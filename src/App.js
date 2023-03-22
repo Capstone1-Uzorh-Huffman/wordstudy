@@ -78,7 +78,7 @@ function App() {
                     <InfoTable />
                 </Tab>
             </Tabs>
-            <Footer />
+            <Footer className="footer" />
         </div>
     );
 }
