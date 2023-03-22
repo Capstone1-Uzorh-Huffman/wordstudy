@@ -5,7 +5,10 @@ function SplitTable(props) {
     return (
         <div className="split">
             <InputGroup className="splitTable">
-                <Form.Control placeholder="Words per Table" />
+                <Form.Control
+                    placeholder="Words per Table"
+                    onChange={(event) => props.setNumWords(event.target.value)}
+                />
                 <InputGroup.Text className="splitButton" id="basic-addon2">
                     Split Table
                 </InputGroup.Text>
