@@ -1,45 +1,30 @@
 function Footer() {
-  return (
-    <footer class="footer">
-  <div class="footer-left col-md-4 col-sm-6">
-    <p class="about">
-      <span> About the Project</span> 
-    </p>
-    <div class="icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-    </div>
-  </div>
-  <div class="footer-center col-md-4 col-sm-6">
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span> Street name and number</span> City, Country</p>
-    </div>
-    <div>
-      <i class="fa fa-phone"></i>
-      <p> (+00) 0000 000 000</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="#"> office@company.com</a></p>
-    </div>
-  </div>
-  <div class="footer-right col-md-4 col-sm-6">
-    <h2> Company<span> logo</span></h2>
-    <p class="menu">
-      <a href="#"> Home</a> |
-      <a href="#"> About</a> |
-      <a href="#"> Services</a> |
-      <a href="#"> Portfolio</a> |
-      <a href="#"> News</a> |
-      <a href="#"> Contact</a>
-    </p>
-    <p class="name"> Company Name &copy; 2016</p>
-  </div>
-</footer>
-  );
+    return (
+        <footer class="footer">
+            <div class="footer-left col-md-4 col-sm-6">
+                <p class="about">
+                    <h2>People</h2>
+                    <p>Dr. Blunt</p>
+                    <a href="Email@email.com">Drblunt@email.com</a>
+                    <p>Dr. Van Arsdell</p>
+                    <a href="Email@email.com">DrVA@email.com</a>
+                </p>
+            </div>
+            <div class="footer-center col-md-4 col-sm-6"></div>
+            <div class="footer-right col-md-4 col-sm-6">
+                <h2>Contributers</h2>
+                <p class="contributers">
+                    <p>Francis Uzorh</p>
+                    <a href="fuzorh@email.edu">Frank@email.com</a>
+                    <p>Joshua Huffman</p>
+                    <a href="huffy@email.com">huffy@email.com</a>
+                    <p>Justin Schy</p>
+                    <a href="jschy@email.com">jschy@emailcom</a>
+                    <p>Dr. Matthew Preston</p>
+                    <a href="drpreston@email.com">gowildcats@email.com</a>
+                </p>
+            </div>
+        </footer>
+    );
 }
 export default Footer;

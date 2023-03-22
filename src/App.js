@@ -7,18 +7,17 @@ import AttributeSearch from "./components/page_components/AttributeSearch";
 import InfoTable from "./components/page_components/InfoTable";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import Footer from "./components/page_components/Footer";
 import "./style.scss";
 import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
 import SplitTable from "./components/page_components/SplitTable";
-
+import Footer from "./components/page_components/Footer";
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
     const [filterTerms, setFilterTerms] = useState([]);
     const [minMaxFilter, setMaxFilter] = useState(new Map());
-    const [numWord, setNumWords] = ("0");
+    const [numWord, setNumWords] = "0";
 
     const addFilter = ({ label, min, max }) => {
         setMaxFilter((map) => new Map(map.set(label, { min, max })));
@@ -70,7 +69,7 @@ function App() {
                         removeFilter={removeFilter}
                     />
                     <FilterList filterTerms={filterTerms} filterMinMax={getMinMaxArray()} />
-                    <SplitTable setNumWords={setNumWords}/>
+                    <SplitTable setNumWords={setNumWords} />
                     <ListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} tableName={"Full List"} />
                     <ListTable tableName={"List 1"} />
                     <ListTable tableName={"List 2"} />
@@ -79,7 +78,7 @@ function App() {
                     <InfoTable />
                 </Tab>
             </Tabs>
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 }

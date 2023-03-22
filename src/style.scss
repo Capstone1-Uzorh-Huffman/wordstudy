@@ -10,8 +10,8 @@
 }
 
 .infoCard {
-    width: 90%; 
-    margin: auto; 
+    width: 90%;
+    margin: auto;
     margin-top: 5rem;
     border: none;
 }
@@ -49,7 +49,7 @@
 }
 
 .wd-des {
-    font-style:oblique;
+    font-style: oblique;
 }
 
 .sn-wrapper {
@@ -69,7 +69,7 @@
 }
 
 .nav-tabs {
-    --bs-nav-tabs-link-active-color: black
+    --bs-nav-tabs-link-active-color: black;
 }
 
 .sb-group {
@@ -81,16 +81,16 @@
 }
 
 .sb-text {
-    background-color: black; 
+    background-color: black;
     color: white;
-    border: 1em; 
+    border: 1em;
     font-weight: bold;
 }
 
 .wt-wrapper {
     max-width: 92%;
     margin: auto;
-    margin-top: 3rem; 
+    margin-top: 3rem;
     overflow: auto;
     padding: none;
 }
@@ -109,9 +109,9 @@
 
 .as-wrapper {
     margin: auto;
-    margin-top: 5rem; 
+    margin-top: 5rem;
     max-width: 90%;
-    justify-self: center; 
+    justify-self: center;
     padding: none;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .lt-card {
-    margin: auto; 
+    margin: auto;
     overflow: auto;
     padding: none;
 }
@@ -161,25 +161,25 @@
 
 .checkLabel {
     margin-right: 3rem;
-    display:inline-flex;
+    display: inline-flex;
 }
 
 .checkInput {
     margin-right: 0.5rem;
 }
 
-.filters{
+.filters {
     margin-left: 6%;
     padding-top: 1.5rem;
     display: flex;
 }
 
-.badge{
+.badge {
     margin-right: 0.5rem;
     margin-left: 00.5rem;
 }
 
-.ctg{
+.ctg {
     margin-bottom: 1rem;
 }
 
@@ -188,10 +188,10 @@
     border: none;
 }
 
-.splitButton{
-    background-color: black; 
+.splitButton {
+    background-color: black;
     color: white;
-    border: 1em; 
+    border: 1em;
     font-weight: bold;
 }
 
@@ -210,44 +210,43 @@
     font-size: 16px;
     padding: 50px;
     margin-top: 50px;
-  }
-  
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
     display: inline-block;
     vertical-align: top;
-  }
-  
-  
-  /* footer left*/
-  
-  .footer .footer-left {
+}
+
+/* footer left*/
+
+.footer .footer-left {
     width: 33%;
     padding-right: 15px;
-  }
-  
-  .footer .about {
+}
+
+.footer .about {
     line-height: 20px;
     color: #ffffff;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
-  }
-  
-  .footer .about span {
+}
+
+.footer .about span {
     display: block;
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .footer .icons {
+}
+
+.footer .icons {
     margin-top: 25px;
-  }
-  
-  .footer .icons a {
+}
+
+.footer .icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -260,16 +259,15 @@
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
-  }
-  
-  
-  /* footer center*/
-  
-  .footer .footer-center {
+}
+
+/* footer center*/
+
+.footer .footer-center {
     width: 30%;
-  }
-  
-  .footer .footer-center i {
+}
+
+.footer .footer-center i {
     background-color: black;
     color: #ffffff;
     font-size: 25px;
@@ -280,87 +278,62 @@
     line-height: 42px;
     margin: 10px 15px;
     vertical-align: middle;
-  }
-  
-  .footer .footer-center i.fa-envelope {
+}
+
+.footer .footer-center i.fa-envelope {
     font-size: 17px;
     line-height: 38px;
-  }
-  
-  .footer .footer-center p {
+}
+
+.footer .footer-center p {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
     margin: 0;
-  }
-  
-  .footer .footer-center p span {
+}
+
+.footer .footer-center p span {
     display: block;
     font-weight: normal;
     font-size: 14px;
     line-height: 2;
-  }
-  
-  .footer .footer-center p a {
-    color: #0099ff;
-    text-decoration: none;
-  }
-  
-  
-  /* footer right*/
-  
-  .footer .footer-right {
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
     width: 35%;
-  }
-  
-  .footer h2 {
+}
+
+.footer h2 {
     color: #ffffff;
     font-size: 36px;
     font-weight: normal;
     margin: 0;
-  }
-  
-  .footer h2 span {
-    color: #0099ff;
-  }
-  
-  .footer .menu {
+}
+
+.footer .contributers {
+    line-height: 20px;
     color: #ffffff;
-    margin: 20px 0 12px;
-    padding: 0;
-  }
-  
-  .footer .menu a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .footer .menu a:hover {
-    color: #0099ff;
-  }
-  
-  .footer .name {
-    color: #0099ff;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     margin: 0;
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .footer {
-      font-size: 14px;
+        font-size: 14px;
     }
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: center;
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
     }
     .footer .footer-center i {
-      margin-left: 0;
+        margin-left: 0;
     }
-  }
+}
