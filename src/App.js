@@ -53,6 +53,7 @@ function App() {
         }
         console.log(temp);
         setFilterTerms([...temp]);
+        setNumWords("0");
     };
 
     return (
@@ -72,11 +73,7 @@ function App() {
                     <FilterList filterTerms={filterTerms} filterMinMax={getMinMaxArray()} />
                     <SplitTable setNumWords={setNumWords} />
                     <ListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} tableName={"Full List"} />
-                    <SplitListTable
-                        filterTerms={filterTerms}
-                        filterMinMax={getMinMaxArray()}
-                        numWords={numWords}
-                    />
+                    <SplitListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} numWords={numWords} />
                 </Tab>
                 <Tab eventKey="info" title="More Information">
                     <InfoTable />
