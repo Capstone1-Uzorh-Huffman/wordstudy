@@ -24,9 +24,6 @@ function SplitListTable(props) {
             }
 
             let newFilter = words;
-            //console.log(newFilter.length);
-
-            //console.log(categories);
 
             if (categories.length > 0) {
                 newFilter = words.filter((word) => {
