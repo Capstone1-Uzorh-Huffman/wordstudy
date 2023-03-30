@@ -3,8 +3,6 @@ import Card from "react-bootstrap/Card";
 import { words } from "../../data/data";
 import Accordion from "react-bootstrap/Accordion";
 import { useEffect, useState } from "react";
-import Category from "../categories/Category";
-import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 
 function SplitListTable(props) {
     const [filtered, setFiltered] = useState([]);

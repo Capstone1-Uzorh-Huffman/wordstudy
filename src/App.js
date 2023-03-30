@@ -75,15 +75,8 @@ function App() {
                     <SplitListTable
                         filterTerms={filterTerms}
                         filterMinMax={getMinMaxArray()}
-                        tableName={"List 1"}
                         numWords={numWords}
                     />
-                    {/* <SplitListTable
-                        filterTerms={filterTerms}
-                        filterMinMax={getMinMaxArray()}
-                        tableName={"List 2"}
-                        numWords={numWords}
-                    /> */}
                 </Tab>
                 <Tab eventKey="info" title="More Information">
                     <InfoTable />
