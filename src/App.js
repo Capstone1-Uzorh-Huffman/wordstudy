@@ -10,6 +10,7 @@ import Tabs from "react-bootstrap/Tabs";
 import "./style.scss";
 import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
+import SplitListTable from "./components/page_components/splitListTable";
 import SplitTable from "./components/page_components/SplitTable";
 
 function App() {
@@ -17,9 +18,6 @@ function App() {
     const [filterTerms, setFilterTerms] = useState([]);
     const [minMaxFilter, setMaxFilter] = useState(new Map());
     const [numWords, setNumWords] = useState("0");
-
-    //const ttest2 = require("@stdlib/stats-ttest2");
-    //var ttest = ttest2([1, 2, 3, 4, 5], [2, 3, 4, 5, 6]);
 
     const addFilter = ({ label, min, max }) => {
         setMaxFilter((map) => new Map(map.set(label, { min, max })));
@@ -30,6 +28,7 @@ function App() {
             map.delete(label);
             return new Map(map);
         });
+        setNumWords("0");
     };
 
     const getMinMaxArray = () => {
@@ -72,24 +71,19 @@ function App() {
                     />
                     <FilterList filterTerms={filterTerms} filterMinMax={getMinMaxArray()} />
                     <SplitTable setNumWords={setNumWords} />
-                    <ListTable
-                        filterTerms={filterTerms}
-                        filterMinMax={getMinMaxArray()}
-                        tableName={"Full List"}
-                        numWord={"0"}
-                    />
-                    <ListTable
+                    <ListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} tableName={"Full List"} />
+                    <SplitListTable
                         filterTerms={filterTerms}
                         filterMinMax={getMinMaxArray()}
                         tableName={"List 1"}
-                        numWord={numWords}
+                        numWords={numWords}
                     />
-                    <ListTable
+                    {/* <SplitListTable
                         filterTerms={filterTerms}
                         filterMinMax={getMinMaxArray()}
                         tableName={"List 2"}
-                        numWord={numWords}
-                    />
+                        numWords={numWords}
+                    /> */}
                 </Tab>
                 <Tab eventKey="info" title="More Information">
                     <InfoTable />
