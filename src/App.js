@@ -10,14 +10,14 @@ import Tabs from "react-bootstrap/Tabs";
 import "./style.scss";
 import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
+import SplitListTable from "./components/page_components/splitListTable";
 import SplitTable from "./components/page_components/SplitTable";
-
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
     const [filterTerms, setFilterTerms] = useState([]);
     const [minMaxFilter, setMaxFilter] = useState(new Map());
-    const [numWord, setNumWords] = ("0");
+    const [numWords, setNumWords] = useState("0");
 
     const addFilter = ({ label, min, max }) => {
         setMaxFilter((map) => new Map(map.set(label, { min, max })));
@@ -28,6 +28,7 @@ function App() {
             map.delete(label);
             return new Map(map);
         });
+        setNumWords("0");
     };
 
     const getMinMaxArray = () => {
@@ -52,6 +53,7 @@ function App() {
         }
         console.log(temp);
         setFilterTerms([...temp]);
+        setNumWords("0");
     };
 
     return (
@@ -69,10 +71,9 @@ function App() {
                         removeFilter={removeFilter}
                     />
                     <FilterList filterTerms={filterTerms} filterMinMax={getMinMaxArray()} />
-                    <SplitTable setNumWords={setNumWords}/>
+                    <SplitTable setNumWords={setNumWords} />
                     <ListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} tableName={"Full List"} />
-                    <ListTable tableName={"List 1"} />
-                    <ListTable tableName={"List 2"} />
+                    <SplitListTable filterTerms={filterTerms} filterMinMax={getMinMaxArray()} numWords={numWords} />
                 </Tab>
                 <Tab eventKey="info" title="More Information">
                     <InfoTable />
