@@ -12,6 +12,7 @@ import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
 import SplitListTable from "./components/page_components/splitListTable";
 import SplitTable from "./components/page_components/SplitTable";
+import Footer from "./components/page_components/Footer";
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
