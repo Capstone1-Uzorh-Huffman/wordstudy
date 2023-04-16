@@ -299,7 +299,6 @@
     line-height: 2;
 }
 
-
 /* footer right*/
 
 .footer .footer-right {
@@ -319,6 +318,15 @@
     font-size: 13px;
     font-weight: normal;
     margin: 0;
+}
+
+.footer .bottom-text {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
 }
 
 @media (max-width: 767px) {

@@ -3,21 +3,30 @@ function Footer() {
         <footer class="footer">
             <div class="footer-left col-md-4 col-sm-6">
                 <p class="about">
-                    <a href="jrblunt@anderson.edu">Dr. Janell Blunt</a>
-                    <br></br>
-                    <a href="Email@email.com">Dr. Van Arsdell</a> {/**need to get email*/}
+                    <h5>Contributers</h5>
+                    <ul>
+                        <li>Dr Janell Blunt - jrblunt@anderson.edu</li>
+                        <li>Dr. Josh Van Arsdall - joshua.vanarsdall@elmhurst.edu</li>
+                    </ul>
                 </p>
             </div>
             <div class="footer-center col-md-4 col-sm-6"></div>
             <div class="footer-right col-md-4 col-sm-6">
                 <p class="contributers">
-                    <a href="fuzorh@email.edu">Francis Uzorh</a> {/**need to get email*/}
-                    <a href="huffy@email.com">Joshua Huffman</a> {/**need to get email*/}
-                    <a href="jschy@email.com">Justin Schy</a> {/**need to get email*/}
-                    <a href="brian@email.com">Brian Schultz</a> {/**need to get email*/}
-                    <a href="mspreston@anderson.edu">Dr. Matthew Preston</a>
+                    <h5>Designers</h5>
+                    <ul>
+                        <li>Francis Uzorh - email</li>
+                        <li>Joshua Huffman - email</li>
+                        <li>Jacob Spires - email</li>
+                        <li>Jacob Ranahan - email</li>
+                        <li>Michael Carroll - mrcarroll421@gmail.com</li>
+                    </ul>
                 </p>
             </div>
+            <p class="bottom-text">
+                This website was created as a senior capstone project at Anderson University. Special thanks to Dr.
+                Matthew Preston, Brian Schultz, and Justin Schy.
+            </p>
         </footer>
     );
 }
