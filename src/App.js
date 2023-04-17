@@ -13,6 +13,9 @@ import ListTable from "./components/page_components/listTable";
 import FilterList from "./components/page_components/FilterList";
 import SplitTable from "./components/page_components/SplitTable";
 
+import ExportCSV from "./components/page_components/ExportCSV";
+import exportZip from "./components/page_components/exportZip";
+
 
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
