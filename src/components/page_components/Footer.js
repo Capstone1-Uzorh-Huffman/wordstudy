@@ -15,10 +15,10 @@ function Footer() {
                 <p class="contributers">
                     <h5>Designers</h5>
                     <ul>
-                        <li>Francis Uzorh - email</li>
-                        <li>Joshua Huffman - email</li>
-                        <li>Jacob Spires - email</li>
-                        <li>Jacob Ranahan - email</li>
+                        <li>Francis Uzorh - uzorhfrancis@gmail.com</li>
+                        <li>Joshua Huffman - jwhuffmanau2022@gmail.com</li>
+                        <li>Jacob Spires - jacobspires00@yahoo.com</li>
+                        <li>Jacob Ranahan - ranahanjacob@gmail.com</li>
                         <li>Michael Carroll - mrcarroll421@gmail.com</li>
                     </ul>
                 </p>
