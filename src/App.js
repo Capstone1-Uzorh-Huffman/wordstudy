@@ -14,6 +14,9 @@ import SplitListTable from "./components/page_components/splitListTable";
 import SplitTable from "./components/page_components/SplitTable";
 import Footer from "./components/page_components/Footer";
 
+//Each part of the page is divided into seperate components and are pulled into here
+//This is primarily what is rendered on the website,
+//changes should be made in components when possible
 function App() {
     const [searchTerms, setSearchTerms] = useState("");
     const [filterTerms, setFilterTerms] = useState([]);

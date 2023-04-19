@@ -5,6 +5,8 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { words } from "../../data/data";
 import { useEffect, useState } from "react";
 
+//Each category list is dynamically generated here
+//Placeholders pull from the data through words, only 3 currently are hardcoded
 function CategoryList(props) {
     const [minPlaceholder, setMinPlaceholder] = useState("Min");
     const [maxPlaceholder, setMaxPlaceholder] = useState("Max");
@@ -18,17 +20,30 @@ function CategoryList(props) {
             tablelabel = "Anim" + tablelabel;
         }
 
-        setMinPlaceholder(
-            words.reduce((prev, curr) => {
-                return prev[tablelabel] < curr[tablelabel] ? prev : curr;
-            })[tablelabel]
-        );
+        //If placeholders render improperly, check that label is correct first
+        //Otherwise, do the following to properly set a new placeholder
+        if (tablelabel === "MNG") {
+            setMinPlaceholder("2");
+            setMaxPlaceholder("33");
+        } else if (tablelabel === "AoA") {
+            setMinPlaceholder("2.22");
+            setMaxPlaceholder("13.22");
+        } else if (tablelabel === "LEN") {
+            setMinPlaceholder("2");
+            setMaxPlaceholder("12");
+        } else {
+            setMinPlaceholder(
+                words.reduce((prev, curr) => {
+                    return prev[tablelabel] < curr[tablelabel] ? prev : curr;
+                })[tablelabel]
+            );
 
-        setMaxPlaceholder(
-            words.reduce((prev, curr) => {
-                return prev[tablelabel] > curr[tablelabel] ? prev : curr;
-            })[tablelabel]
-        );
+            setMaxPlaceholder(
+                words.reduce((prev, curr) => {
+                    return prev[tablelabel] > curr[tablelabel] ? prev : curr;
+                })[tablelabel]
+            );
+        }
     }, [props.FilterLabel]);
 
     const setMin = (value) => {
@@ -61,7 +76,7 @@ function CategoryList(props) {
         if (labelMinMax.max && labelMinMax.min) {
             return;
         }
-        
+
         setCheckBoxValue(false);
     }, [labelMinMax]);
 
